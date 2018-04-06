@@ -68,7 +68,7 @@ def get_values(file, n_attrs):
             examples.append(example)
     values_list = []
     for n in range(n_attrs):
-        values_list.append(sorted(list(set([e[n] for e in examples]))))
+        values_list.append(sorted(set([e[n] for e in examples])))
     return values_list
 
 
